@@ -263,11 +263,6 @@ body {
             background-color: $b1cl;
             position: relative;
             transform: skewX(30deg);
-          
-            @media only screen and (max-width: 800px) {
-                height: 20rem;
-                width: 15rem;
-            }
 
             &::after,
             &::before {
@@ -283,6 +278,14 @@ body {
 
             &::after {transform: translate(4rem, 4rem);}
             &::before {transform: translate(-8rem, 8rem);}
+
+            @media only screen and (max-width: 800px) {
+                height: 15rem;
+                width: 30rem;
+
+                &::after {transform: translate(3rem, 2rem);}
+                &::before {transform: translate(-4rem, 4rem);}
+            }
         }
     }
 }
